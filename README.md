@@ -5,7 +5,7 @@ Google analytics to show how to add Analytics to your Android app to measure use
 Latest versions of Android Studio and Google Play Services
 
 # Getting Started
-**1. Start a new Project in Android studio with blank Activity.**
+**1.** **Start a new Project in Android studio with blank Activity.**
 2. **Add following permission in MANIFEST FILE**
  ```
   <uses-permission android:name="android.permission.INTERNET"/>
