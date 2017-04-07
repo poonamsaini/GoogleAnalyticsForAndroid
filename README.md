@@ -27,16 +27,15 @@ Latest versions of Android Studio and Google Play Services
     apply plugin: 'com.google.gms.google-services'
      ```
 4. **Getting json file**
-  - Go [Here](https://developers.google.com/mobile/add?platform=android&cntapi=analytics&cnturl=https:%2F%2Fdevelopers.google.com%2Fanalytics%2Fdevguides%2Fcollection%2Fandroid%2Fv4%2Fapp%3Fconfigured%3Dtrue&cntlbl=Continue%20Adding%20Analytics).
-  - Go to analytics.google.com
-  - Sign in using your google account.
-  - click on admin on left slider.
-  - click on Property and choose create a new property.
-  - Choose mobile app
-  - Choose Google Analytics Servcices SDK
-  - Give your app name.
-  - Choose industry category.
-  - Choose the country and timezone.
+  1. Go to [Google Developer Page](https://developers.google.com/mobile/add?platform=android&cntapi=analytics&cnturl=https:%2F%2Fdevelopers.google.com%2Fanalytics%2Fdevguides%2Fcollection%2Fandroid%2Fv4%2Fapp%3Fconfigured%3Dtrue&cntlbl=Continue%20Adding%20Analytics).
+  2. Sign in using your google account.
+  3. Give your app name and package name.
+  4. Select your country and hit choose and configure services.
+  5. Choose create a new Analytics property if it is a new project or else choose your project from drop down.
+  6. Provide your country name and timezone and click enable analytical service. 
+  7. Your analytics tracking ID will be generated. Click on generate configuration files to generate the json file.
+  8. Download your google-services.json and then paste it inside the app folder of your project (project/app).
+  
   
 
   
