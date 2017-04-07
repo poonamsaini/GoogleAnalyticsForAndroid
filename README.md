@@ -61,12 +61,12 @@ Latest versions of Android Studio and Google Play Services
     AnalyticApplication application = (AnalyticApplication) getApplication();
         applicationTracker = application.getDefaultTracker();
   ```
- 3. Register all your tracking events via
+ 3. Register all your tracking events in this case screens (be it a activity or a fragment) via [call onresume function to keep track of how many times it has been used by the customer.
    ```js
    applicationTracker.setScreenName("mainActivity");
         applicationTracker.send(new HitBuilders.ScreenViewBuilder().build());
    ```
- 4. Forward the data to server via
+ 4. Forward the data to server [depends on the developer that how often and with what interval they want to send it] via
    ```js
   applicationTracker.send(new HitBuilders.EventBuilder()
                 .setCategory("Action")
