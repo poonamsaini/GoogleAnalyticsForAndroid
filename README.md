@@ -61,7 +61,7 @@ Latest versions of Android Studio and Google Play Services
     AnalyticApplication application = (AnalyticApplication) getApplication();
         applicationTracker = application.getDefaultTracker();
   ```
- 3. Register all your tracking events in this case screens (be it a activity or a fragment) via [call onresume function to keep track of how many times it has been used by the customer.
+ 3. Register all your tracking events in this case screens (be it a activity or a fragment) via [call onresume function to keep track of how many times it has been used by the customer]
    ```js
    applicationTracker.setScreenName("mainActivity");
         applicationTracker.send(new HitBuilders.ScreenViewBuilder().build());
@@ -73,6 +73,14 @@ Latest versions of Android Studio and Google Play Services
                 .setAction("Share")
                 .build());
    ```
+   
+## Monitor the application analytics
+1. Build your app and run it on emulator or yoyr device.
+2. Go to [analytics.google.com](https://analytics.google.com/analytics/web/)
+3. Login using your google account.
+4. Click on  real time on left slider. YOu can monitor your analytics here.
+
+**NOTE-** It might take upto a minute to load the data.
    
   
 
