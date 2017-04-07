@@ -38,7 +38,7 @@ Latest versions of Android Studio and Google Play Services
   - Download your google-services.json and then paste it inside the app folder of your project (project/app).
   
 # CODE 
-1. Create a class extending application to return your application's tracker.
+1. Create a class extending application to return your application's tracker for eg- AnalyticApplication extends Application.
   ```js
    private Tracker applicationTracker;
 
@@ -49,6 +49,12 @@ Latest versions of Android Studio and Google Play Services
         }
         return applicationTracker;
     }
+   ```
+   Register the name of the application in manifest.
+   ```js
+   <application
+        android:name=".AnalyticApplication"
+        ....
    ```
 
   
