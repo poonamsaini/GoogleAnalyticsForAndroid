@@ -20,8 +20,7 @@ Latest versions of Android Studio and Google Play Services
     
   - Add the following dependency under app level gradle
   ```
-    classpath 'com.google.gms:google-services:3.0.0'
-    
+compile 'com.google.android.gms:play-services-analytics:10.0.1'    
     ```
     
   - Add the following plugin under app level gradle
