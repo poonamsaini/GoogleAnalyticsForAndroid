@@ -5,7 +5,7 @@ Google analytics to show how to add Analytics to your Android app to measure use
 Latest versions of Android Studio and Google Play Services
 
 # Getting Started
-**1.** **Start a new Project in Android studio with blank Activity.**
+1. **Start a new Project in Android studio with blank Activity.**
 2. **Add following permission in MANIFEST FILE**
  ```
   <uses-permission android:name="android.permission.INTERNET"/>
@@ -26,5 +26,17 @@ Latest versions of Android Studio and Google Play Services
     ```
     apply plugin: 'com.google.gms.google-services'
      ```
+4. **Getting json file**
+  - Go [Here](https://developers.google.com/mobile/add?platform=android&cntapi=analytics&cnturl=https:%2F%2Fdevelopers.google.com%2Fanalytics%2Fdevguides%2Fcollection%2Fandroid%2Fv4%2Fapp%3Fconfigured%3Dtrue&cntlbl=Continue%20Adding%20Analytics).
+  - Go to analytics.google.com
+  - Sign in using your google account.
+  - click on admin on left slider.
+  - click on Property and choose create a new property.
+  - Choose mobile app
+  - Choose Google Analytics Servcices SDK
+  - Give your app name.
+  - Choose industry category.
+  - Choose the country and timezone.
+  
 
   
