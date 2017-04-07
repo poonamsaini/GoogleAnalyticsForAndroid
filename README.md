@@ -56,6 +56,25 @@ Latest versions of Android Studio and Google Play Services
         android:name=".AnalyticApplication"
         ....
    ```
+ 2. In onCreate of your mainActivity get a refrence of your application tracker.
+  ```js
+    AnalyticApplication application = (AnalyticApplication) getApplication();
+        applicationTracker = application.getDefaultTracker();
+  ```
+ 3. Register all your tracking events via
+    ```js
+   applicationTracker.setScreenName("mainActivity");
+        applicationTracker.send(new HitBuilders.ScreenViewBuilder().build());
+  ```
+ 4. Forward the data to server via
+   ```js
+  applicationTracker.send(new HitBuilders.EventBuilder()
+                .setCategory("Action")
+                .setAction("Share")
+                .build());
+  ```
+   
+  
 
   
   
