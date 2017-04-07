@@ -62,10 +62,10 @@ Latest versions of Android Studio and Google Play Services
         applicationTracker = application.getDefaultTracker();
   ```
  3. Register all your tracking events via
-    ```js
+   ```js
    applicationTracker.setScreenName("mainActivity");
         applicationTracker.send(new HitBuilders.ScreenViewBuilder().build());
-    ```
+   ```
  4. Forward the data to server via
    ```js
   applicationTracker.send(new HitBuilders.EventBuilder()
