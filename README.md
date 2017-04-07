@@ -37,6 +37,21 @@ Latest versions of Android Studio and Google Play Services
   - Your analytics tracking ID will be generated. Click on generate configuration files to generate the json file.
   - Download your google-services.json and then paste it inside the app folder of your project (project/app).
   
+# CODE 
+1. Create a class extending application to return your application's tracker.
+  ```js
+    private Tracker mTracker;
+
+    synchronized public Tracker getDefaultTracker() {
+        if (mTracker == null) {
+            GoogleAnalytics analytics = GoogleAnalytics.getInstance(this);
+            mTracker = analytics.newTracker(R.xml.global_tracker);
+        }
+        return mTracker;
+    }
+    ```
+
+  
   
 
   
