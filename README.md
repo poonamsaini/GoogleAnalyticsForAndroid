@@ -15,16 +15,19 @@ Latest versions of Android Studio and Google Play Services
   - Add the following dependency under project level gradle
   ```
     classpath 'com.google.gms:google-services:3.0.0'
+    
     ```
     
   - Add the following dependency under app level gradle
   ```
     classpath 'com.google.gms:google-services:3.0.0'
+    
     ```
     
   - Add the following plugin under app level gradle
   ```
     apply plugin: 'com.google.gms.google-services'
+    
     ```
 
   
