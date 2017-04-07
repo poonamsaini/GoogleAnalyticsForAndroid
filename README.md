@@ -65,14 +65,14 @@ Latest versions of Android Studio and Google Play Services
     ```js
    applicationTracker.setScreenName("mainActivity");
         applicationTracker.send(new HitBuilders.ScreenViewBuilder().build());
-  ```
+    ```
  4. Forward the data to server via
    ```js
   applicationTracker.send(new HitBuilders.EventBuilder()
                 .setCategory("Action")
                 .setAction("Share")
                 .build());
-  ```
+   ```
    
   
 
