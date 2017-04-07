@@ -40,16 +40,16 @@ Latest versions of Android Studio and Google Play Services
 # CODE 
 1. Create a class extending application to return your application's tracker.
   ```js
-    private Tracker mTracker;
+   private Tracker applicationTracker;
 
     synchronized public Tracker getDefaultTracker() {
-        if (mTracker == null) {
-            GoogleAnalytics analytics = GoogleAnalytics.getInstance(this);
-            mTracker = analytics.newTracker(R.xml.global_tracker);
+        if (applicationTracker == null) {
+            GoogleAnalytics googleAnalytics = GoogleAnalytics.getInstance(this);
+            applicationTracker = googleAnalytics.newTracker(R.xml.global_tracker);
         }
-        return mTracker;
+        return applicationTracker;
     }
-    ```
+   ```
 
   
   
